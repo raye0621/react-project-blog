@@ -1,26 +1,17 @@
-# README
-
-> 這裡會放兩三個吧
-> Blog + Gobang + Project
-
-1. 簡介 (圖)
-2. 功能 (圖)
-3. 使用技術
-4. 專案結構
-
-重點：附截圖、介紹增加專業度
-
-## Blog
-
-### 簡介
+## React Blog
 
 這是一個使用 React 搭配 react-router-dow 實現 SPA 部落格系統，串接 Lidemy API
 
-版面設計參考接觸程式後才熟悉的網站 Medium。
+版面設計參考接觸程式後熟悉的網站 [Medium](https://medium.com/)。
 
 測試帳號：raye
 測試密碼：Lidemy
-[圖一：首頁]
+
+
+- [DEMO](https://raye0621.github.io/react-project-blog/#/)
+- [Lidemy API](https://github.com/Lidemy/lidemy-student-json-api-server)
+
+![](https://i.imgur.com/V4yh6nr.mp4)
 
 ### 功能
 
@@ -30,12 +21,32 @@
 - 發布文章功能：登入狀態可新增文章
 - 使用 JWT 驗證身分
 
-[圖一：分頁]
-[圖二：登入/註冊]
-[圖三：發文]
+![home](https://i.imgur.com/9CD61rw.png)
+![singlepage](https://i.imgur.com/A8PAnuR.png)
+![loginlogout](https://i.imgur.com/Fg6AMVQ.png)
+![post](https://i.imgur.com/WMdPa1k.png)
 
 ### 使用技術
 
 - 以 React 搭配 react-router-dom 路由實作 SPA 網站
-- 以 styled-components 
-- 使用 function component 搭配 hooks 
+- 以 JSX 語法撰寫元件
+- 使用 styled-components
+- 使用 function component 搭配 react hooks 
+
+## 專案結構
+
+- /src
+	- /components
+	- /constants
+		- breakpoint.js
+	- /pages
+		- AboutPage.js
+		- HomePage.js
+		- LoginPage.js
+		- PostsPage.js
+		- RegisterPage.js
+		- SinglePage.js
+	- WebAPI.js
+	- context.js
+	- index.js: Utility functions
+	- utils.js: Integrate to call API
