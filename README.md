@@ -1,8 +1,6 @@
 ## React Blog
 
-這是一個使用 React 搭配 react-router-dow 實現 SPA 部落格系統，串接 Lidemy API
-
-版面設計參考接觸程式後熟悉的網站 [Medium](https://medium.com/)。
+這是一個使用 React 搭配 react-router-dow 實現 SPA 部落格系統，串接 Lidemy API，版面設計參考接觸程式後熟悉的網站 [Medium](https://medium.com/)。
 
 測試帳號：raye
 測試密碼：Lidemy
@@ -11,7 +9,7 @@
 - [DEMO](https://raye0621.github.io/react-project-blog/#/)
 - [Lidemy API](https://github.com/Lidemy/lidemy-student-json-api-server)
 
-![](https://i.imgur.com/V4yh6nr.mp4)
+![](https://i.imgur.com/98Id1jk.gif)
 
 ### 功能
 
@@ -21,10 +19,12 @@
 - 發布文章功能：登入狀態可新增文章
 - 使用 JWT 驗證身分
 
-![home](https://i.imgur.com/9CD61rw.png)
-![singlepage](https://i.imgur.com/A8PAnuR.png)
-![loginlogout](https://i.imgur.com/Fg6AMVQ.png)
-![post](https://i.imgur.com/WMdPa1k.png)
+![home](https://i.imgur.com/tG6YpDJ.jpg)
+
+![singlepage](https://i.imgur.com/nDxzSuy.jpg)
+
+![loginlogout](https://i.imgur.com/hgkvWhm.jpg)
+
 
 ### 使用技術
 
