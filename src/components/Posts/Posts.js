@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Proptypes from 'prop-types'
 import { Link } from "react-router-dom";
-
 const PostContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -9,14 +8,13 @@ const PostContainer = styled.div`
   margin-bottom:2rem;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgba(41, 41, 41, 1);
-
   & * {
     // outline: 1px solid gold;
   }
 `
 
 const PostWrapper = styled.div`
-  width: 75%;
+  // width: 75%;
   min-width: 75%;
   display: flex;
   flex-direction: column;
@@ -56,6 +54,10 @@ const ContentText = styled.p`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 `
+const PostImgWrapper = styled.div`
+  margin-left: 50px;
+`
+
 
 const PostImg = styled(Link)``
 
@@ -82,6 +84,7 @@ export default function Posts({ post }){
 
   return (
     <PostContainer>
+      {/* <PPP> */}
       <PostWrapper>
         <PostTitle to={`/posts/${post.id}`}>{post.title}</PostTitle>
         <ContentText>{post.body}</ContentText>
@@ -91,9 +94,12 @@ export default function Posts({ post }){
         </PostBottom>
         
       </PostWrapper>
-      <PostImg to={`/posts/${post.id}`} >
-        <Img $ImgRrl={ImgRrl} />
-      </PostImg>
+      <PostImgWrapper>
+        <PostImg to={`/posts/${post.id}`} >
+          <Img $ImgRrl={ImgRrl} />
+        </PostImg>
+      </PostImgWrapper>
+      {/* </PPP> */}
     </PostContainer>
   )
 }
