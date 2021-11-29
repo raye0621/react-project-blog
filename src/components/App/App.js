@@ -21,6 +21,10 @@ import {
 const MainContainer = styled.div`
   display: flex;
   justify-content: center;
+  & * {
+    // outline: 1px solid gold;
+  }
+  // margin: 0 auto;
 `
 
 const PageContainer = styled.div`
